@@ -135,6 +135,7 @@ a:focus {
 .main-footer {
   padding-top: 100px;
   padding-bottom: 0px;
+  margin: auto;
   background: linear-gradient(white, transparent 80%), url('pics/coffee-plus-laptop.png') no-repeat center;
   background-size: cover;
 }
@@ -158,9 +159,9 @@ a:focus {
 .mywork {
   color: white;
   background-color: dimgray;
-  padding: 15%;
+  padding: 15% 20%;
   border-top: 10px solid lightcoral;
-  margin: 150px 0 60px;
+  margin: 105px 0 60px;
   background-image:
   url('pics/matrix-code.gif');
   background-position: center;
@@ -243,7 +244,7 @@ a:focus {
   .grind,
   .coder-coding,
   .d-print-coder {
-    float: none;
+    float: left;
     width: 100%;
   }
   .main-footer {
