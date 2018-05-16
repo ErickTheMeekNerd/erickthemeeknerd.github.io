@@ -38,6 +38,7 @@ h3 {
 
 img {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 /* Pseudo Styles */
@@ -73,6 +74,9 @@ a:focus {
   font-family: Copperplate;
   padding-top: 170px;
   height: 850px;
+  background-image: url('coder.gif');
+  background-position: bottom;
+  background-size: cover;
 }
 
 .title {
@@ -110,4 +114,8 @@ a:focus {
   padding: 15%;
   border-top: 10px solid lightcoral;
   margin: 150px 0 60px;
+  background-image:
+  url('the-grand.jpg');
+  background-position: center;
+  background-size: cover;
 }
