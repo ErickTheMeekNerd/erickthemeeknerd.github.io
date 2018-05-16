@@ -71,12 +71,14 @@ a:focus {
 
 .main-header {
   background-color: lightcoral;
+  border-top: 10px solid lightcoral;
   font-family: Copperplate;
   padding-top: 170px;
   height: 850px;
   background-image: url('coder.gif');
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -84,28 +86,47 @@ a:focus {
   font-size: 1.625rem;  /* 26px/16px */
 }
 
-.primary-content,
-.secondary-content {
-  width: 75%;
-  border-left: 50px;
-  border-right: 50px;
-  margin: auto;
-  max-width: 900px;
+.intro {
+  font-size: 1.25em;  /* 20px/16px */
 }
 
 .primary-content,
-.main-header {
+.main-header,
+.main-footer {
   text-align: center;
 }
 
-.t-border {
-  border-top: 2px solid lightgrey;
+.primary-content {
+  padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+  padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid lightgrey;
+  overflow: auto;
 }
 
 .main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: solid 10px lightcoral;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey;
+}
+
+/* Layout Style ------------------ */
+
+.primary-content,
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
 }
 
 .mywork {
@@ -118,4 +139,27 @@ a:focus {
   url('the-grand.jpg');
   background-position: center;
   background-size: cover;
+}
+
+/* Float Styles */
+
+.laptop,
+.grind {
+  width: 46.5%;
+}
+
+.grind {
+  float: right;
+}
+
+.laptop {
+  float: left;
+}
+
+/* Float Clearfix */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
