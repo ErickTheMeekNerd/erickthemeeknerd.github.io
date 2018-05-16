@@ -6,7 +6,7 @@
 /* Base Styles -------------------- */
 
 body {
-  color: grey;
+  color: black;
   font-size: 1em;
   font-family: Trebuchet MS;
   margin: 0;
@@ -43,7 +43,7 @@ h2 {
 
 h3 {
   font-size: 1.3em;
-  color: grey;
+  color: black;
   font-family: Rockwell;
   font-weight: normal;
   margin-bottom: 1.7em;  /* 34px */
@@ -193,7 +193,6 @@ a:focus {
   float: left;
 }
 
-
 /* Float Clearfix */
 
 .group:after {
@@ -206,7 +205,8 @@ a:focus {
 
 @media (max-width: 1024px){
   .primary-content,
-  .secondary-content {
+  .secondary-content,
+  .third-content {
     width: 90%;
   }
   .mywork {
@@ -215,9 +215,10 @@ a:focus {
   }
 }
 
-@@media (max-width: 768px;) {
+@media (max-width: 768px;) {
   .primary-content,
-  .secondary-content {
+  .secondary-content,
+  .third-content {
     width: 100%;
     padding: 20px;
     border-top: none;
