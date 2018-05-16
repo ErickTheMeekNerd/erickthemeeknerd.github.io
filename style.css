@@ -200,3 +200,53 @@ a:focus {
   display: table;
   clear: both;
 }
+
+/* Media Queries */
+
+@media (max-width: 1024px){
+  .primary-content,
+  .secondary-content {
+    width: 90%;
+  }
+  .mywork {
+    padding: 10% 12%;
+    margin: 50px 0px 20px;
+  }
+}
+
+@@media (max-width: 768px;) {
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+  }
+  .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+  }
+  .title {
+    font-size: 1.3rem;
+    border: none;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+  .arrow {
+    display: none;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .laptop,
+  .grind,
+  .coder-coding,
+  .d-print-coder {
+    float: none;
+    width: 100%;
+  }
+  .main-footer {
+    padding: 20px 0;
+  }
+}
