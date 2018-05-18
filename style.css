@@ -245,7 +245,7 @@ a:focus {
   .grind,
   .coder-coding,
   .d-print-coder {
-    float: none;
+    clear: both;
     width: 100%;
   }
   .main-footer {
