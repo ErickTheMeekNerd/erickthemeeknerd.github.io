@@ -11,8 +11,30 @@
 // sentence += " with " + noun + ".";
 // alert(sentence);
 
-var age = prompt("How old are you?");
-var deathAge = prompt("What age do you think you will live too?");
-var yearsToLive = parseInt(deathAge) - parseInt(age);
-alert("WOW! You have " + yearsToLive + " years to live!");
-console.log();
+// var age = prompt("How old are you?");
+// var deathAge = prompt("What age do you think you will live too?");
+// var yearsToLive = parseInt(deathAge) - parseInt(age);
+// alert("WOW! You have " + yearsToLive + " years to live!");
+// console.log();
+
+
+
+// var dieRoll = Math.floor(Math.random() * 6) + 1;
+// alert("You rolled a " + dieRoll + "!");
+
+
+
+// var input = prompt("Gimme any number");
+// var topNumber = parseInt(input);
+// var input2 = prompt("Gimme another number");
+// var bottomNumber = parseInt(input2);
+// var randomNumber = Math.floor(Math.random() * (topNumber - bottomNumber + 1)) + bottomNumber;
+// var message = randomNumber + " is the random number between " + topNumber + " and " + bottomNumber + "."
+// alert(message);
+
+var answer = prompt("What is my favorite food?");
+if ( answer.toUpperCase() === "RICE" ) {
+  alert("Nice job, scumbag! You know me well.");
+} else {
+  alert("Fuck you! You don't know me.");
+}
