@@ -1,7 +1,20 @@
+/*
+This is a random number guessing game that generates a number between 1 and 6 and gives the player two attempts to guess the number.
+*/
 
+// assume the player didn't correctly guess
 var correctGuess = false;
+
+// genertaes a random number between 1 and 6
 var randomNumber = Math.floor(Math.random() * 6) + 1;
+
 var guess = prompt("Im thinking of a number between 1 and 6. What is it?");
+
+/* test to see if the player is
+1. correct
+2. guessed too high
+3. guessed too low
+*/
 if (parseInt(guess) === randomNumber) {
   correctGuess = true;
 } else if (parseInt(guess) < randomNumber) {
@@ -15,6 +28,8 @@ if (parseInt(guess) === randomNumber) {
     correctGuess = true;
   }
 }
+
+// test if the player is correct and output response
 if (correctGuess) {
   alert("Great guess bitch! You got it : )");
 } else {
