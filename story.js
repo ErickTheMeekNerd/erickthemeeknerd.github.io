@@ -1,3 +1,28 @@
+
+var correctGuess = false;
+var randomNumber = Math.floor(Math.random() * 6) + 1;
+var guess = prompt("Im thinking of a number between 1 and 6. What is it?");
+if (parseInt(guess) === randomNumber) {
+  correctGuess = true;
+} else if (parseInt(guess) < randomNumber) {
+  var guessMore = prompt("Try again pussy. The number I'm thinking is more than " + guess + ".");
+  if (parseInt(guessMore) === randomNumber) {
+    correctGuess = true;
+  }
+} else if (parseInt(guess) > randomNumber) {
+  var guessLess = prompt("Try again pussy. The number I'm thinking of is less than " + guess + ".");
+  if (parseInt(guessLess) === randomNumber) {
+    correctGuess = true;
+  }
+}
+if (correctGuess) {
+  alert("Great guess bitch! You got it : )");
+} else {
+  alert("You suck at life. It was " + randomNumber + ".");
+}
+
+
+
 // "There once was a [adjective] programmer who wanted to use Javascript to [verb] the [noun]."
 //
 // var verb = prompt("What's your favorite thing to do?");
@@ -32,9 +57,9 @@
 // var message = randomNumber + " is the random number between " + topNumber + " and " + bottomNumber + "."
 // alert(message);
 
-var answer = prompt("What is my favorite food?");
-if ( answer.toUpperCase() === "RICE" ) {
-  alert("Nice job, scumbag! You know me well.");
-} else {
-  alert("Fuck you! You don't know me.");
-}
+// var answer = prompt("What is my favorite food?");
+// if ( answer.toUpperCase() === "RICE" ) {
+//   alert("Nice job, scumbag! You know me well.");
+// } else {
+//   alert("Fuck you! You don't know me.");
+// }
