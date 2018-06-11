@@ -97,7 +97,7 @@ img {
 
  .col {
  	padding-right: 1em;
- 	padding-left: 1em;
+  padding-left: 1em;
  }
 
  .main-footer {
@@ -109,9 +109,9 @@ img {
  /* ---- Page Elements ---- */
 
  .logo {
-  border-radius: 50%;
+  border-radius: 5%;
   width: 95%;
-  max-width: 300px;
+  max-width: 400px;
   max-height: 300px;
 
  }
@@ -139,9 +139,17 @@ img {
  		font-size: 1.4em;
  	}
 
+  .logo {
+    max-width: 190px;
+    max-height: 190px;
+    border-radius: 50%;
+  }
+
   .main-header,
-  .main-nav {
+  .main-nav,
+  .row {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .main-header {
@@ -149,11 +157,10 @@ img {
     align-items: center;
   }
 
-  .logo {
-    max-width: 190px;
-    max-height: 190px;
-    border-radius: 50%;
+  .col {
+    flex: 1 50%;
   }
+
  }
  @media (min-width: 1025px) {
  	.main-header,
@@ -161,4 +168,13 @@ img {
  		width: 80%;
  		max-width: 1150px;
  	}
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .col {
+    flex-basis: 0;
+  }
  }
