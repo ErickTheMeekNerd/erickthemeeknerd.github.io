@@ -110,9 +110,9 @@ img {
 
  .logo {
   border-radius: 5%;
-  width: 95%;
-  max-width: 400px;
+  width: 90%;
   max-height: 300px;
+  max-width: 300px;
 
  }
 
@@ -159,6 +159,10 @@ img {
 
   .col {
     flex: 1 50%;
+  }
+
+  .primary {
+    order: -1;
   }
 
  }
