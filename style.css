@@ -87,7 +87,7 @@ img {
  .main-footer {
  	text-align: center;
  }
- 
+
  .banner {
  	color: #fff;
  	background: #3acec2;
@@ -109,7 +109,11 @@ img {
  /* ---- Page Elements ---- */
 
  .logo {
- 	width: 190px;
+  border-radius: 50%;
+  width: 95%;
+  max-width: 300px;
+  max-height: 300px;
+
  }
 
  .headline {
@@ -134,6 +138,22 @@ img {
  	.tagline {
  		font-size: 1.4em;
  	}
+
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 190px;
+    max-height: 190px;
+    border-radius: 50%;
+  }
  }
  @media (min-width: 1025px) {
  	.main-header,
