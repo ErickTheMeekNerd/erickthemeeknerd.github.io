@@ -96,8 +96,22 @@ img {
  }
 
  .col {
- 	padding-right: 1em;
-  padding-left: 1em;
+ 	padding: 1em;
+  background: #edf4f7;
+  margin: .5em;
+  border-radius: .3em;
+ }
+
+ .button {
+   color: #fff;
+   background: #3acec2;
+   padding: .25em 1.25em;
+   border-radius: .3em;
+   margin-top: auto;
+   text-align: center;
+   width: 100%;
+   display: inline-block;
+   font-size: 1.25em;
  }
 
  .main-footer {
@@ -147,7 +161,8 @@ img {
 
   .main-header,
   .main-nav,
-  .row {
+  .row,
+  .col {
     display: flex;
     flex-wrap: wrap;
   }
@@ -159,12 +174,12 @@ img {
 
   .col {
     flex: 1 50%;
+    flex-direction: column;
   }
 
-  .primary {
+  .secondary {
     order: -1;
   }
-
  }
  @media (min-width: 1025px) {
  	.main-header,
@@ -180,5 +195,13 @@ img {
 
   .col {
     flex-basis: 0;
+  }
+
+  .primary {
+    flex-grow: 1.4;
+  }
+
+  .button {
+    font-size: 1rem;
   }
  }
